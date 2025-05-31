@@ -5,4 +5,8 @@ from django.http import HttpResponse
 
 
 def students(request):
-    return HttpResponse("<h2>Hello World</h2>")
+    students = [
+        {'id':24,'Name': "Md Sanoarul Islam",'Age':24}
+
+    ]
+    return HttpResponse(students)
